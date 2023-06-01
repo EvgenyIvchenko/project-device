@@ -1,25 +1,22 @@
 @font-face {
   font-family: "Raleway";
   font-weight: 800;
-  font-style: normal;
   font-display: swap;
-  src: url("fonts/raleway/raleway-800.woff2") format("woff2");
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Rubik";
   font-weight: 400;
-  font-style: normal;
   font-display: swap;
-  src: url("fonts/rubik/rubik-400.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 
 @font-face {
   font-family: "Rubik";
   font-weight: 700;
-  font-style: normal;
   font-display: swap;
-  src: url("fonts/rubik/rubik-700.woff2") format("woff2");
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 
 body {
@@ -39,7 +36,6 @@ body a {
 
 .user-popover__item a {
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -49,7 +45,6 @@ body a {
 .slider__info-wrap dd {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 30px;
@@ -57,7 +52,6 @@ body a {
 
 .slider__info-wrap dt {
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -66,7 +60,6 @@ body a {
 .advantage__content-item h3 {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -100,7 +93,6 @@ input[type="radio"].visually-hidden {
 .button {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -113,7 +105,7 @@ input[type="radio"].visually-hidden {
 
 .filter {}
 
-.catalog-titles {}
+.catalog-title {}
 
 .filter__label--checkbox {}
 
@@ -124,7 +116,6 @@ input[type="radio"].visually-hidden {
 .filter-sorting {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -148,7 +139,6 @@ input[type="radio"].visually-hidden {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  font-style: normal;
   line-height: 20px;
   color: #000000;
 }
@@ -157,7 +147,6 @@ input[type="radio"].visually-hidden {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
   font-size: 16px;
-  font-style: normal;
   line-height: 20px;
   color: #000000;
 }
@@ -172,7 +161,6 @@ input[type="radio"].visually-hidden {
   background-color: #000000;
   color: #ffffff;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -200,7 +188,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -219,7 +206,6 @@ input[type="radio"].visually-hidden {
 .nav__link {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -238,7 +224,6 @@ input[type="radio"].visually-hidden {
 .dropdown__link {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
@@ -265,7 +250,6 @@ input[type="radio"].visually-hidden {
 .slider__title {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -296,7 +280,6 @@ input[type="radio"].visually-hidden {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
-  font-style: normal;
   line-height: 24px;
   color: #000000;
 }
@@ -318,7 +301,6 @@ input[type="radio"].visually-hidden {
 .advantage__delivery {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 20px;
   line-height: 23px;
@@ -331,7 +313,13 @@ input[type="radio"].visually-hidden {
 
 .about {}
 
-.about__title {}
+.about__title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
 
 .about__text {}
 
@@ -340,7 +328,6 @@ input[type="radio"].visually-hidden {
 .about__item {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -350,7 +337,13 @@ input[type="radio"].visually-hidden {
 
 .contacts {}
 
-.contacts__title {}
+.contacts__title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
 
 .contacts__text {}
 
@@ -359,13 +352,19 @@ input[type="radio"].visually-hidden {
 .contacts__sub-title {
   color: #444444;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
 
-.contacts__address {}
+.contacts__address {
+  color: #444444;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
 
 .contacts__phone {
   text-decoration: underline;
@@ -388,7 +387,6 @@ input[type="radio"].visually-hidden {
 .article__submit {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -456,7 +454,6 @@ input[type="radio"].visually-hidden {
 .main__title {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
@@ -465,7 +462,6 @@ input[type="radio"].visually-hidden {
 .main__crumbs {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -483,7 +479,6 @@ input[type="radio"].visually-hidden {
 .filter__title {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -516,7 +511,6 @@ input[type="radio"].visually-hidden {
 .filter__label {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
@@ -535,7 +529,6 @@ input[type="radio"].visually-hidden {
 .sorting__select {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
@@ -556,7 +549,6 @@ input[type="radio"].visually-hidden {
 .card__title {
   color: #000000;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -566,7 +558,6 @@ input[type="radio"].visually-hidden {
 .card__price {
   color: #444444;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -577,7 +568,6 @@ input[type="radio"].visually-hidden {
 .card__new {
   color: rgba(0, 0, 0, 0.6);
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 14px;
   line-height: 16px;
@@ -592,7 +582,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 16px;
   line-height: 19px;
@@ -611,7 +600,6 @@ input[type="radio"].visually-hidden {
 .pagination__button {
   color: #000000;
   font-family: "Raleway", sans-serif;
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 21px;
@@ -624,7 +612,7 @@ input[type="radio"].visually-hidden {
 .pagination__link {
   color: #444444;
   font-family: "Rubik", sans-serif;
-  font-style: normal;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
