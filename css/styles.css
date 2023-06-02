@@ -105,8 +105,6 @@ input[type="radio"].visually-hidden {
 
 .filter {}
 
-.catalog-title {}
-
 .filter__label--checkbox {}
 
 .filter__label--radio {}
@@ -309,7 +307,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.advantage__icon-car {}
+.advantage__icon-car {
+  background-color: #ffe17f;
+}
+
+.advantage__icon-info {
+  background-color:rgba(220, 220, 220, 0.5);
+}
 
 .about {}
 
@@ -376,7 +380,13 @@ input[type="radio"].visually-hidden {
   background-color: #f0f0f0;
 }
 
-.article__title {}
+.article__title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+}
 
 .article__text {}
 
@@ -442,7 +452,9 @@ input[type="radio"].visually-hidden {
 
 .footer__social {}
 
-.footer__social-link {}
+.footer__social-link {
+  background-color: rgba(255, 255, 255, 0.3);
+}
 
 .footer__academy {
   color: #ffe17f;
@@ -478,17 +490,25 @@ input[type="radio"].visually-hidden {
 
 .filter__title {
   color: #000000;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 .filter__form {}
 
 .filter__fieldset {}
 
-.filter__legend {}
+.filter__legend {
+  color: #000000;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+}
 
 .filter__range-buttons {}
 
@@ -522,7 +542,15 @@ input[type="radio"].visually-hidden {
 
 .sorting__top-wrap {}
 
-.sorting__title {}
+.sorting__title {
+  color: #000000;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
 
 .sorting__form {}
 
