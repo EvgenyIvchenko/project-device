@@ -127,7 +127,15 @@ input[type="radio"].visually-hidden {
 
 .header {}
 
+<<<<<<< Updated upstream
 .header__logo {}
+=======
+.header-products {
+  margin: 0 0 35px;
+}
+
+.header__container {}
+>>>>>>> Stashed changes
 
 .header__form {}
 
@@ -461,7 +469,13 @@ input[type="radio"].visually-hidden {
   text-decoration: underline;
 }
 
-.main__wrapper {}
+.crumbs__container {
+  margin-bottom: 35px;
+}
+
+.main__wrapper {
+  padding-left: 60px;
+}
 
 .main__title {
   color: #000000;
@@ -469,6 +483,7 @@ input[type="radio"].visually-hidden {
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+  margin-bottom: 16px;
 }
 
 .main__crumbs {
@@ -477,6 +492,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
+  display: flex;
 }
 
 .crumb {}
@@ -486,6 +502,13 @@ input[type="radio"].visually-hidden {
 }
 
 .main__filter {
+  max-width: 320px;
+  width: 100%;
+  padding: 0 60px;
+}
+
+.global__container {
+  display: flex;
 }
 
 .filter__title {
@@ -496,11 +519,19 @@ input[type="radio"].visually-hidden {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  padding: 25px 168px 0 0;
+  margin-bottom: 60px;
+  margin-top: 0;
 }
 
 .filter__form {}
 
-.filter__fieldset {}
+.filter__fieldset {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+}
 
 .filter__legend {
   color: #000000;
@@ -524,7 +555,10 @@ input[type="radio"].visually-hidden {
 
 .filter__fieldset {}
 
-.filter__list {}
+.filter__list {
+  padding: 0;
+  margin: 0;
+}
 
 .filter__item {}
 
@@ -538,9 +572,18 @@ input[type="radio"].visually-hidden {
 
 .filter__submit {}
 
-.main__sorting {}
+.main__sorting {
+  display: flex;
+  flex-direction: column;
+}
 
-.sorting__top-wrap {}
+.sorting__top-wrap {
+  display: flex;
+  background-color: #f0f0f0;
+  padding: 25px 40px;
+  justify-content: space-between;
+  align-items: center;
+}
 
 .sorting__title {
   color: #000000;
@@ -550,6 +593,8 @@ input[type="radio"].visually-hidden {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
 .sorting__form {}
@@ -560,19 +605,37 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  background-color: #f0f0f0;
+  border: none;
 }
 
-.sorting__button {}
+.sorting__button {
+  border: none;
+}
 
 .sorting__wrapper {
   background-color: #ffffff;
+  padding: 70px 40px 0 40px;
+  display: flex;
+  flex-direction: column;
 }
 
-.sorting__list {}
+.sorting__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-.sorting__item {}
+.sorting__item {
+  max-width: 360px;
+}
 
-.card__wrapper {}
+.card__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 44px;
+}
 
 .card__title {
   color: #000000;
@@ -581,6 +644,16 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   letter-spacing: -0.02em;
+  padding: 0;
+  margin: 0;
+  display: block;
+  max-width: 65%;
+}
+
+.card__text-wrap {
+  display: flex;
+  justify-content: space-between;
+
 }
 
 .card__price {
@@ -589,9 +662,13 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+  display: block;
+  margin-left: auto;
 }
 
-.card__image {}
+.card__image {
+  margin-bottom: 32px;
+}
 
 .card__new {
   color: rgba(0, 0, 0, 0.6);
@@ -604,7 +681,9 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.card__link {}
+.card__link {
+  display: none;
+}
 
 .sorting__more {
   background-color: #ffffff;
@@ -615,15 +694,33 @@ input[type="radio"].visually-hidden {
   line-height: 19px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  border: 3px solid #e5e5e5;
+  max-width: 760px;
+  height: 55px;
+  margin-bottom: 44px;
+}
+
+.pagination__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ebebeb;
+  height: 71px;
+  padding: 0 25px;
+  margin-bottom: 78px;
 }
 
 .sorting__pagination {
-  background-color: #f0f0f0;
+  background-color: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+  width: 100%;
 }
 
-.pagination__item--prev {}
-
-.pagination__item {}
+.pagination__page {
+  opacity: 0.3;
+}
 
 .pagination__button {
   color: #000000;
@@ -635,7 +732,6 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.pagination__page {}
 
 .pagination__link {
   color: #444444;
