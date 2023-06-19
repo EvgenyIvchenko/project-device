@@ -171,7 +171,19 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
-.header__search-icon {}
+.header__search-wrap {
+  display: flex;
+  text-align: center;
+  position: relative;
+  max-width: 357px;
+  width: 100%;
+}
+
+.header__search-icon {
+  position: absolute;
+  top: 12px;
+  left: 16px;
+}
 
 .header__search-input {
   width: 100%;
@@ -180,6 +192,12 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  height: 40px;
+  padding: 10px 10px 10px 48px;
+  border: 2px solid #000;
+  border-right: none;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .header__submit {
@@ -188,6 +206,13 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   line-height: 20px;
   color: #000000;
+  height: 40px;
+  max-width: 160px;
+  width: 100%;
+  background-color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border: 2px solid #000;
 }
 
 .header__user-list {
@@ -745,7 +770,6 @@ input[type="radio"].visually-hidden {
   border: none;
   border-bottom: 3px solid #c4c4c4;
   padding: 11px 16px 14px;
-
 }
 
 .article__submit {
