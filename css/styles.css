@@ -93,6 +93,22 @@ input[type="radio"].visually-hidden {
   text-align: center;
   letter-spacing: 0.2em;
   text-transform: uppercase;
+  position: relative;
+  padding: 0 25px;
+  background-color: transparent;
+  z-index: 0;
+}
+
+.button::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 8px;
+  background-color: #ffe17f;
+  z-index: -1;
 }
 
 .user-popover__link {
@@ -115,12 +131,6 @@ input[type="radio"].visually-hidden {
 
 .dropdown {}
 
-.crumbs {}
-
-.crumbs__container {
-  margin-bottom: 35px;
-  padding-left: 90px
-}
 
 .filter {}
 
@@ -241,12 +251,12 @@ input[type="radio"].visually-hidden {
   padding: 0 18px;
 }
 
-.user-list__item:first-child {
-  margin-right: auto;
+.user-list__item--disabled {
+  opacity: 0.3;
 }
 
-.user-list__item:nth-child(2) {
-  opacity: 0.3;
+.user-list__item:first-child {
+  margin-right: auto;
 }
 
 .user-list__link {}
@@ -505,6 +515,7 @@ input[type="radio"].visually-hidden {
   line-height: 30px;
   color: #000000;
   margin: 0 0 12px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .category {
@@ -605,16 +616,19 @@ input[type="radio"].visually-hidden {
   margin: 0;
   width: 100%;
   padding: 64px 64px 64px 116px;
+  position: relative;
 }
 
 .advantage__content-item {
   width: 100%;
   max-width: 475px;
+  display: none;
 }
 
 .advantage__content-item p {
   padding: 0;
   margin: 0;
+  max-width: 475px;
 }
 
 .advantage__content-item h3 {
@@ -622,9 +636,29 @@ input[type="radio"].visually-hidden {
   margin-top: 0;
 }
 
-.advantage__content-item:nth-child(2),
-.advantage__content-item:nth-child(3) {
-  display: none;
+.advantage__content-item:nth-child(1)::after {
+  content: url("/img/advantage__logo-delivery.svg");
+  position: absolute;
+  top: 78px;
+  right: 63px;
+}
+
+.advantage__content-item:nth-child(2)::after {
+  content: url("/img/advantage__logo-guarantees.svg");
+  position: absolute;
+  top: 62px;
+  right: 28px;
+}
+
+.advantage__content-item:nth-child(3)::after {
+  content: url("/img/advantage__logo-credit.svg");
+  position: absolute;
+  top: 66px;
+  right: 28px;
+}
+
+.advantage__content-item--active {
+  display: contents;
 }
 
 .advantage__delivery {
@@ -691,6 +725,9 @@ input[type="radio"].visually-hidden {
 .about__list {
   display: flex;
   flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-bottom: 11px;
 }
 
@@ -701,6 +738,21 @@ input[type="radio"].visually-hidden {
   font-size: 18px;
   line-height: 20px;
   padding-bottom: 19px;
+  position: relative;
+  display: flex;
+  padding-left: 34px;
+}
+
+.about__item::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc700;
+  top: 6px;
+  left: 0;
+  border-radius: 50%;
 }
 
 .about__link {
@@ -827,6 +879,20 @@ input[type="radio"].visually-hidden {
 
 .article__safe {
   margin: 0;
+  position: relative;
+  /* display: flex; */
+  padding-left: 32px;
+}
+
+.article__safe::before {
+  content: "";
+  background-image: url("/img/article__safe-logo.svg");
+  top: 7px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  display: block;
+  position: absolute;
 }
 
 .footer {
@@ -974,12 +1040,36 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
 }
 
+.crumbs__container {
+  margin-bottom: 35px;
+  padding-left: 90px
+}
+
+.crumbs {}
+
 .crumb {
-  margin: 0 36px 16px 0;
+  margin: 0 16px 16px 0;
+  position: relative;
+  padding-left: 20px;
 }
 
 .crumb:last-child {
   margin-right: 0;
+}
+
+.crumb:first-child {
+  padding-left: 0px;
+}
+
+.crumb:not(:first-child)::before {
+  position: absolute;
+  content: "";
+  background-image: url("/img/crumbs__logo.svg");
+  width: 4px;
+  height: 7px;
+  top: 6px;
+  left: 0;
+  display: block;
 }
 
 .main__filter-sorting-wrap {
@@ -1095,6 +1185,7 @@ input[type="radio"].visually-hidden {
 
 .sorting__button {
   border: none;
+  opacity: 0.2;
 }
 
 .sorting__wrapper {
@@ -1207,6 +1298,7 @@ input[type="radio"].visually-hidden {
 
 .pagination__page {
   padding: 10px 16px;
+  opacity: 0.3;
 }
 
 .pagination__link {
